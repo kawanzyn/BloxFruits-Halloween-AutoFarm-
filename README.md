@@ -15,7 +15,7 @@ The first delivery is a mobile-friendly event scanner. It predicts the Harvest M
 1. Open `release/HalloweenEventScanner.lua`.
 2. Copy the complete file.
 3. Paste it into Delta's script editor and execute it while inside Blox Fruits.
-4. Use **SCANEAR** for a manual scan, **MONITOR: ON/OFF** to pause or resume the 18-second scan, and **COPIAR** to copy the report when the executor exposes clipboard support.
+4. Use **SCANEAR** for a manual scan, **MONITOR: ON/OFF** to pause or resume the 30-second scan, and **COPIAR** to copy the report when the executor exposes clipboard support.
 5. Send the report back so the next implementation step can use the actual instance names and paths.
 
 ## Repository layout
