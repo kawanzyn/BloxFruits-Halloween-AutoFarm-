@@ -233,6 +233,7 @@ make("UIStroke", {
 
 local header = make("Frame", {
     Name = "Header",
+    Active = true,
     Size = UDim2.new(1, 0, 0, 48),
     BackgroundColor3 = Color3.fromRGB(43, 31, 61),
     BorderSizePixel = 0,
