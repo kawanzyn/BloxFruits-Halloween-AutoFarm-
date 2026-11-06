@@ -75,8 +75,12 @@ function EventScanner.Scan(world, player, config)
     local descendants = world:GetDescendants()
     for _, instance in ipairs(descendants) do
         if instance:IsA("Model") or instance:IsA("BasePart") then
-            local ancestorModel = instance:FindFirstAncestorOfClass("Model")
-            local candidate = ancestorModel or instance
+            local candidate
+            if instance:IsA("Model") then
+                candidate = instance
+            else
+                candidate = instance:FindFirstAncestorOfClass("Model") or instance
+            end
             local combinedName = string.lower(candidate.Name .. " " .. instance.Name)
 
             local category = getCategory(combinedName, config)
