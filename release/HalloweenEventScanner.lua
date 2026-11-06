@@ -19,7 +19,7 @@ if not player then
 end
 
 local VERSION = "0.1.0"
-local SCAN_INTERVAL = 18
+local SCAN_INTERVAL = 30
 local MAX_RESULTS = 12
 
 local KEYWORDS = {
@@ -128,7 +128,12 @@ local function scanEventObjects()
 
     for _, instance in ipairs(descendants) do
         if instance:IsA("Model") or instance:IsA("BasePart") then
-            local candidate = instance:FindFirstAncestorOfClass("Model") or instance
+            local candidate
+            if instance:IsA("Model") then
+                candidate = instance
+            else
+                candidate = instance:FindFirstAncestorOfClass("Model") or instance
+            end
             local combinedName = string.lower(candidate.Name .. " " .. instance.Name)
             local category = getCategory(combinedName)
             local isDoor = containsAny(combinedName, KEYWORDS.Door)
