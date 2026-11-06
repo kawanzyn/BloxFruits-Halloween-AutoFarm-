@@ -1,7 +1,7 @@
 local Config = {}
 
 Config.VERSION = "0.1.0"
-Config.SCAN_INTERVAL = 18
+Config.SCAN_INTERVAL = 30
 Config.MAX_RESULTS = 12
 
 -- The scanner is intentionally read-only. These are name hints, not guaranteed
