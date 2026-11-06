@@ -50,4 +50,4 @@ A current third-party guide reports an end date of 2026-11-15, 01:00 UTC, while 
 
 - First delivery is read-only. It never attacks, teleports, activates prompts, fires remotes, or downloads remote code.
 - The exact live instance hierarchy is not established by public guides. The scanner therefore uses name hints and exposes its report so the actual server hierarchy can be checked before interaction logic is added.
-- Scan interval is 18 seconds to limit repeated Workspace traversals on a mobile device.
+- Scan interval is 30 seconds to limit repeated Workspace traversals on a mobile device.
